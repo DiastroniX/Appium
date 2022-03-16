@@ -1,0 +1,27 @@
+<testsuite name="tests.search_tests.Tests for Wiki search" tests="1" errors="1" failures="0" skipped="0" time="0.000998" timestamp="2021-06-28T11:25:35.241722" hostname="LAPTOP-9G74PCU3"><testcase classname="tests.search_tests.Tests for Wiki search" name="User can search and correct result is shown" status="failed" time="0.000998"><error type="AttributeError" message="'mainScreen' object has no attribute 'click'">
+<![CDATA[
+Failing step: Given Tap on search field ... failed in 0.001s
+Location: features/tests/search_tests.feature:4
+Traceback (most recent call last):
+  File "C:\Users\Shkolnyi\PycharmProjects\Appium\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\Shkolnyi\PycharmProjects\Appium\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\search_steps.py", line 5, in tap_search
+    context.app.main_screen.tap_search()
+  File "C:\Users\Shkolnyi\PycharmProjects\Appium\screens\main_screen.py", line 8, in tap_search
+    self.click(*self.SEARCH)
+AttributeError: 'mainScreen' object has no attribute 'click'
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User can search and correct result is shown
+    Given Tap on search field ... failed in 0.001s
+    When Enter Python to search field ... skipped in 0.000s
+    Then Top Result for Python is shown ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
